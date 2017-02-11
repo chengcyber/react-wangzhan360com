@@ -1,5 +1,5 @@
 # redux-todos
-DEMO: Redux todos App
+DEMO: react-redux, imitate wangzhan.360.com home page
 ___
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
