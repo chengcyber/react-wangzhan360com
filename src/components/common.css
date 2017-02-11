@@ -1,0 +1,260 @@
+/* Fixed Nav Bar */
+.top-nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, .5)
+}
+
+.top-nav-signInList {
+    background: rgba(0, 0, 0, 0)
+}
+
+.top-nav-signInList li:not(:first-child) {
+    background-color: #f6f4f5
+}
+
+
+.top-nav {
+    height: 70px;
+    background: #000;
+    line-height: 70px
+}
+
+.top-nav-wrapper {
+    width: 1206px;
+    margin: auto;
+    position: relative
+}
+
+.top-nav-logo {
+    width: 240px;
+    height: 70px;
+    position: absolute;
+    left: -110px;
+    background: url(../../public/img/ICON/WZWSlogo.png) 5px center no-repeat
+}
+
+.top-nav-logo>a {
+    display: inline-block;
+    width: 240px;
+    height: 70px;
+    cursor: pointer
+}
+
+.top-nav ul li {
+    list-style: none;
+    text-align: center
+}
+
+.top-nav-list {
+    font-size: 16px;
+    padding: 0 0 0 108px;
+    position: relative;
+    width: 1000px;
+    margin: auto
+}
+
+.top-nav-list li {
+    display: inline-block;
+    width: 70px;
+    margin: 0 22px
+}
+
+.welcome-list li {
+    margin: 0 20px;
+    width: 100px
+}
+
+.welcome-list li:nth-child(1) {
+    width: 50px;
+    margin: 0 15px 0 40px
+}
+
+.top-nav-list li.active {
+    border-top: 3px solid #00bf9e
+}
+
+.top-nav-list li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px
+}
+
+.top-nav-list li a:hover,
+.top-nav-list li.active a {
+    color: #00bf9e
+}
+
+.top-nav-cover.second {
+    left: 377px
+}
+
+.top-nav-cover.three {
+    left: 561px
+}
+
+.top-nav-cover.four {
+    left: 745px
+}
+
+.top-nav-loginList {
+    display: flex;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    align-items: center
+}
+
+.welcome .top-nav-loginList {
+    background: rgba(0, 0, 0, .1)
+}
+
+.top-nav-loginList li {
+    display: inline-block;
+    padding: 0 10px
+}
+
+.top-nav-loginList li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px
+}
+
+.top-nav .loginLine {
+    width: 1px;
+    height: 14px;
+    background-color: #ccc;
+    padding: 0
+}
+
+.top-nav-signInList {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    padding: 0;
+    z-index: 2;
+    width: 165px
+}
+
+.welcome .top-nav-signInList {
+    background: rgba(0, 0, 0, .1)
+}
+
+.top-nav-signInList li {
+    width: 135px;
+    height: 40px;
+    line-height: 40px
+}
+
+.top-nav-signInList li:first-child {
+    height: 70px;
+    line-height: 70px
+}
+
+.top-nav-signInList li:first-child:hover a {
+    color: #00bf9e
+}
+
+.top-nav-signInList li:not(:first-child) {
+    display: none;
+    background-color: #f6f4f5
+}
+
+.top-nav-signInList li:not(:first-child) a {
+    display: block;
+    color: #656565
+}
+
+.top-nav-signInList li:not(:first-child):hover {
+    background-color: #32c0a8
+}
+
+.top-nav-signInList li:not(:first-child):hover a {
+    color: #fff
+}
+
+.top-nav-signInList li a {
+    color: #fff;
+    text-decoration: none
+}
+
+.top-nav-signInList li a:hover {
+    color: #00bf9e
+}
+
+/* SideLink */
+.side-link li a div {
+    overflow: hidden;
+}
+
+.side-link {
+    position: fixed;
+    width: 54px;
+    height: 275px;
+    right: 0;
+    top: 50%;
+    z-index: 100;
+    list-style: none;
+    padding: 0;
+}
+.side-link li {
+    width: 54px;
+    height: 54px;
+    position: relative;
+}
+
+.side-link li a {
+    border: 0;
+    line-height: 54px;
+    text-decoration: none;
+    width: 54px;
+    height: 54px;
+    display: inline-block;
+}
+.side-link li a div {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    top: 0;
+    right: 0;
+    transition: all .3s;
+    opacity: .8;
+    color: #fff;
+    font: 13px "微软雅黑";
+    text-indent: 65px;
+    line-height: 54px;
+    border-bottom: 1px solid #444;
+}
+
+.side-link li:last-child a div {
+    border: 0;
+}
+
+.side-link li:nth-child(1) a div {
+    background: url(../../public/img/ICON/side_icon01.png) 0 center no-repeat #000;
+}
+
+.side-link li:nth-child(2) a div {
+    background: url(../../public/img/ICON/side_icon02.png) 0 center no-repeat #000;
+}
+
+.side-link li:nth-child(3) a div {
+    background: url(../../public/img/ICON/side_icon03.png) 0 center no-repeat #000;
+}
+
+.side-link li:nth-child(4) a div {
+    background: url(../../public/img/ICON/side_icon04.png) 0 center no-repeat #000;
+}
+
+.side-link li:nth-child(5) a div {
+    background: url(../../public/img/ICON/side_icon05.png) 0 center no-repeat #000;
+}
+
+.side-link li:hover a div {
+    width: 124px;
+    background-color: #00bf9e;
+    border: 1px solid #00bf9e;
+}

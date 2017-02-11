@@ -1,0 +1,46 @@
+{
+  "name": "redux-todos",
+  "version": "0.1.0",
+  "description": "DEMO: Redux todos App",
+  "main": "index.js",
+  "private": true,
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.2.0",
+    "lodash": "^4.17.4",
+    "react-scripts": "0.8.5"
+  },
+  "dependencies": {
+    "node-uuid": "^1.4.7",
+    "normalizr": "^3.1.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "react-router": "^3.0.2",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.7.4",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimochg/redux-todos.git"
+  },
+  "keywords": [],
+  "author": "LIU CHENG <kimochg@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimochg/redux-todos/issues"
+  },
+  "homepage": "https://github.com/kimochg/redux-todos#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
