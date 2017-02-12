@@ -1,8 +1,14 @@
 import React from 'react';
 
-const Section5 = () => (
+const Section5 = ({
+    active
+}) => {
+
+    const footListClass = active? "footer-list footer-list-animation" : "footer-list";
+
+    return (
       <div className="section footer-section">
-          <ul className="footer-list">
+          <ul className={footListClass}>
               <li>
                   <a href="mailto:webguard@b.360.cn">联系邮箱</a>
               </li>
@@ -35,6 +41,7 @@ const Section5 = () => (
               </div>
           </div>
       </div>
-);
+    );
+}
 
 export default Section5;

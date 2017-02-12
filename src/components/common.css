@@ -24,7 +24,8 @@
 .top-nav-wrapper {
     width: 1206px;
     margin: auto;
-    position: relative
+    position: relative;
+    padding-left: 108px;
 }
 
 .top-nav-logo {
@@ -223,7 +224,7 @@
     transition: all .3s;
     opacity: .8;
     color: #fff;
-    font: 13px "微软雅黑";
+    font: 13px;
     text-indent: 65px;
     line-height: 54px;
     border-bottom: 1px solid #444;
@@ -257,4 +258,13 @@
     width: 124px;
     background-color: #00bf9e;
     border: 1px solid #00bf9e;
+}
+
+.side-link li a div span {
+    display: none;
+}
+
+.side-link li:hover a div span {
+    display: initial;
+    font-size: 13px;
 }

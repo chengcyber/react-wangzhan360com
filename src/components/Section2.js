@@ -1,8 +1,16 @@
 import React from 'react';
 
-const Section2 = () => (
+const Section2 = ({
+    active
+}) => {
+
+    const firstLevelClass = active ? "first-level first-level-animation" : "first-level";
+    const leftNumClass = active ? "left-num left-num-animation" : "left-num";
+    const thirdLevelClass = active ? "third-level third-level-animation" : "third-level";
+
+    return (
       <div className="section animation-block">
-          <div className="first-level"></div>
+          <div className={firstLevelClass}></div>
           <div className="second-level">
               <div className="left-num"></div>
               <div className="right-text">
@@ -13,10 +21,11 @@ const Section2 = () => (
                   <p>让您的网站百毒不侵</p>
               </div>
           </div>
-          <div className="third-level">
+          <div className={thirdLevelClass}>
               <div className="white-bg"></div>
           </div>
       </div>
-);
+    );
+}
 
 export default Section2;

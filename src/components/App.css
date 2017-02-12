@@ -301,6 +301,9 @@ div.carousels:hover .ps-nextIcon {
     left: 50%;
     margin: -205px 0 0 -300px;
     z-index: 3;
+}
+
+.first-level-animation {
     animation: first-level 1s;
     animation-fill-mode: forwards;
 }
@@ -333,6 +336,9 @@ div.carousels:hover .ps-nextIcon {
     background: url(../../public/img/ICON/5.png) center center no-repeat;
     display: inline-block;
     margin-right: 210px;
+}
+
+.left-num-animation {
     animation: left-num 1s;
     animation-fill-mode: forwards;
 }
@@ -377,6 +383,9 @@ div.carousels:hover .ps-nextIcon {
     margin-top: -175px;
     margin-left: -400px;
     z-index: 1;
+}
+
+.third-level-animation {
     animation: third-level 1s;
     animation-fill-mode: forwards;
 }
@@ -527,6 +536,9 @@ div.carousels:hover .ps-nextIcon {
     display: flex;
     justify-content: space-between;
     opacity: 0;
+}
+
+.footer-list-animation {
     animation: footer-list 1s;
     animation-fill-mode: forwards;
 }

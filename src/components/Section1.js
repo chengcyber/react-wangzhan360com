@@ -16,7 +16,7 @@ class Section1 extends React.Component {
     }
 
     componentDidMount() {
-
+        this.carouselInterval = setInterval(this.rightCarousel, 6000);
     }
 
     leftCarousel() {
@@ -32,7 +32,7 @@ class Section1 extends React.Component {
         this.setState({
           currentCarousel: prev
         });
-        console.log('prev', prev);
+        // console.log('prev', prev);
     }
 
   rightCarousel () {
@@ -48,17 +48,30 @@ class Section1 extends React.Component {
     this.setState({
         currentCarousel: next
     })
-    console.log('next', next);
+    // console.log('next', next);
+  }
+
+  handleMouseOver() {
+      clearInterval(this.carouselInterval);
+  }
+
+  handleMouseLeave() {
+      this.carouselInterval = setInterval(this.rightCarousel, 6000);
   }
 
   renderCarousel() {
       const { currentCarousel } = this.state;
       return [1, 2, 3].map((item, index) => {
-          console.log('item', item);
-          console.log('currentCarousel', currentCarousel)
+        //   console.log('item', item);
+        //   console.log('currentCarousel', currentCarousel)
           if (item == currentCarousel) {
             return (
-                <div key={index} className={`carousels carousel-${item} animate-carousel`}>
+                <div
+                    key={index}
+                    className={`carousels carousel-${item} animate-carousel`}
+                    onMouseOver={this.handleMouseOver.bind(this)}
+                    onMouseLeave={this.handleMouseLeave.bind(this)}
+                >
                     <span className="ps-prev" onClick={this.leftCarousel}>
                         <span className="ps-prevIcon"></span>
                     </span>
